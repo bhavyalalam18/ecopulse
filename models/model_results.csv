@@ -1,0 +1,4 @@
+model,RMSE,MAE,R2,MAPE_pct
+LinearRegression,945.35,753.62,0.9782,2.53
+RandomForest,952.54,757.45,0.9779,2.55
+XGBoost,901.71,718.98,0.9802,2.41
