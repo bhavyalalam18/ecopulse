@@ -39,31 +39,29 @@ PJME_hourly.csv
 
 ```
 ecopulse/
-├── app.py                    # Streamlit application
-├── setup.py                  # One-command setup (pipeline + training + Excel)
+├── app.py                        # Streamlit application (7 tabs)
+├── setup.py                      # One-command setup
 ├── requirements.txt
 ├── data/
-│   ├── PJME_hourly.csv       # Source dataset
-│   ├── ecopulse.db           # SQLite database
-│   └── EcoPulse_Audit.xlsx   # Excel audit workbook
+│   ├── ecopulse.db               # SQLite database (145k rows)
+│   └── EcoPulse_Audit.xlsx       # Excel audit workbook
 ├── models/
-│   ├── xgb_model.pkl         # Trained XGBoost model
-│   ├── rf_model.pkl          # Random Forest model
-│   ├── scaler.pkl            # StandardScaler for Linear Regression
-│   ├── feature_cols.pkl      # Feature column list
-│   ├── model_results.csv     # RMSE/MAE/R² comparison table
-│   └── plots/                # Feature importance, SHAP, residuals
+│   ├── xgb_model.pkl             # XGBoost model
+│   ├── rf_model.pkl              # Random Forest model
+│   ├── feature_cols.pkl          # Feature column list
+│   ├── model_results.csv         # RMSE/MAE/R² comparison
+│   └── plots/                    # SHAP, feature importance, residuals
+├── powerbi/
+│   ├── ecopulse_dashboard.pbix   # Power BI dashboard (4 pages)
+│   └── ecopulse_dashboard.pdf    # PDF export for submission
 ├── utils/
-│   ├── data_pipeline.py      # CSV → feature engineering → SQLite
-│   ├── train_model.py        # Model training, evaluation, serialization
-│   └── excel_audit.py        # Excel audit workbook generator
+│   ├── data_pipeline.py          # CSV → features → SQLite
+│   ├── train_model.py            # ML training pipeline
+│   └── excel_audit.py            # Excel audit generator
 ├── sql/
-│   └── queries.sql           # Window functions, CTEs, Views
-└── notebooks/
-    └── (add your EDA notebooks here)
+│   └── queries.sql               # Window functions + CTEs
+└── README.md
 ```
-
----
 
 ## 🚀 Quick Start
 
