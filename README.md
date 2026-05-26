@@ -1,3 +1,7 @@
+## 🔗 Live App
+https://ecopulse-rogooxzskfveqw2oyvn3nh.streamlit.app
+
+
 # ⚡ EcoPulse: Smart City Energy Consumption Predictor
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://python.org)
